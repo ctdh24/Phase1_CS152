@@ -8,8 +8,62 @@
 	int num_integers = 0, num_operators = 0, num_parentheses = 0, num_equal = 0;
 
 /* Task 1: Read text from standard-in and prints identified tokens, 1 token per line */
+
+/* Reserved Words*/
 PROGRAM ("program")
 BEGIN_PROGRAM ("beginprogram")
+END_PROGRAM ("endprogram")
+INTEGER
+ARRAY
+OF
+IF
+THEN
+ENDIF
+ELSE
+WHILE
+BEGINLOOP
+ENDLOOP
+BREAK
+CONTINUE
+EXIT
+READ
+WRITE
+AND 
+OR
+NOT
+TRUE
+FALSE
+
+/* Arithemetic Operators*/
+SUB
+ADD
+MULT
+DIV
+MOD
+
+/* Comparison Operators*/
+EQ
+NEQ
+LT
+GT
+LTE
+GTE
+
+
+/* Identifiers and Numbers*/
+IDENT
+digit	[0-9]
+NUMBER  ({digit}+)
+
+/* Other Special Symbols*/
+SEMICOLON
+COLON
+COMMA
+QUESTION
+L_PAREN
+R_PAREN
+ASSIGN 
+
 
 /* Actions that occur when reading in token */
 %%
